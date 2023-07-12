@@ -1,0 +1,26 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+option:
+  numbered: true
+- part: Basics of Scientific Programming for Applied Machine Learning
+  chapters:
+    - file: basics_python.ipynb
+      title: Basics of Python and Best Programming Practices
+      sections:
+        - file: version_control.ipynb
+          title: Version Control
+- part: Basics of Machine Learning for Earth and Environmental Sciences
+  chapters:
+    - file: regression.ipynb
+      title: Linear Regression for Regression and Logistic Regression for Classification
+      sections:
+        - file: training_validation_test.ipynb
+          title: Training, Validation, and Test split
+- part: Deep Learning for the Geosciences
+  chapters:
+    - file: ann.ipynb
+      title: Artificial Neural Networks and Surrogate Modeling
+
