@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>13. Welcome to the fourth lab: Artificial Neural Networks and Surrogate Modeling &#8212; Machine Learning for Earth and Environmental Sciences</title>
+    <title>13. Welcome to Chapter 5: Artificial Neural Networks and Surrogate Modeling &#8212; Machine Learning for Earth and Environmental Sciences</title>
   
   
   
@@ -62,7 +62,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'DL/Week_4_Artificial_Neural_Networks';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="16.1. Notebook Setup" href="S4_1_NNs_with_Keras.html" />
+    <link rel="next" title="13.1. Exercise 1: Artificial Neural Networks with Keras" href="S4_1_NNs_with_Keras.html" />
     <link rel="prev" title="12.4. Setup" href="../ML/S3_3_THOR.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -220,14 +220,15 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">(Part II) Deep Learning for the Geosciences</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">13. <strong>Welcome to the fourth lab: Artificial Neural Networks and Surrogate Modeling</strong></a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">13. Artificial Neural Networks and Surrogate Modeling</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="S4_1_NNs_with_Keras.html">13.1. (Exercise) Artificial Neural Networks with Keras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="S4_2_Physically_informed_parameterization.html">13.2. (Exercise) Physically-Informed Climate Modeling.ipynb</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Week_5_Convolutional_NN.html">14. Notebook Setup</a></li>
 
 
-
-<li class="toctree-l1"><a class="reference internal" href="Week_5_Convolutional_NN.html">17. Notebook Setup</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="Week_6_Recurrent_NN.html">20. <strong>Welcome to the sixth lab: Recurrent Neural Networks and Long-Short Term Memory (LSTM) Networks!</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Week_6_Recurrent_NN.html">17. <strong>Welcome to the sixth lab: Recurrent Neural Networks and Long-Short Term Memory (LSTM) Networks!</strong></a></li>
 
 
 
@@ -401,9 +402,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -414,23 +413,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to the fourth lab: Artificial Neural Networks and Surrogate Modeling</h1>
+    <h1>Welcome to Chapter 5: Artificial Neural Networks and Surrogate Modeling</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">13. <strong>Welcome to the fourth lab: Artificial Neural Networks and Surrogate Modeling</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i-practice-on-simple-datasets">14. Part I: Practice on Simple Datasets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii-application-to-the-emulation-of-atmospheric-convection-for-climate-modeling">15. Part II: Application to the Emulation of Atmospheric Convection for Climate Modeling</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#you-re-flying-high">16. You’re flying high! ⛈🌧 😃 🌧⛈</a></li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -440,14 +427,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><a href="https://colab.research.google.com/github/tbeucler/2022_ML_EES/blob/main/Labs/Week_4_Artificial_Neural_Networks.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-<div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-the-fourth-lab-artificial-neural-networks-and-surrogate-modeling">
-<h1><span class="section-number">13. </span><strong>Welcome to the fourth lab: Artificial Neural Networks and Surrogate Modeling</strong><a class="headerlink" href="#welcome-to-the-fourth-lab-artificial-neural-networks-and-surrogate-modeling" title="Permalink to this headline">#</a></h1>
-<p>For this week’s lab, the learning objectives are:</p>
+  <p><a href="https://colab.research.google.com/github/tbeucler/2023_MLEES_JB/blob/main/ML_EES/DL/Week_4_Artificial_Neural_Networks.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-chapter-5-artificial-neural-networks-and-surrogate-modeling">
+<h1><span class="section-number">13. </span><strong>Welcome to Chapter 5: Artificial Neural Networks and Surrogate Modeling</strong><a class="headerlink" href="#welcome-to-chapter-5-artificial-neural-networks-and-surrogate-modeling" title="Permalink to this headline">#</a></h1>
+<p>You’re flying high! ⛈🌧 😃 🌧⛈</p>
+<p>For this chapter, the learning objectives are:</p>
 <ol class="arabic simple">
 <li><p>Training artificial neural networks using <a class="reference external" href="https://keras.io/"><code class="docutils literal notranslate"><span class="pre">Keras</span></code></a>’s sequential and functional Application Programming Interfaces.</p></li>
-<li><p>Normalizing your input data to facilitate deep learning.</p></li>
+<li><p>Normalizing and transforming your input data to facilitate deep learning.</p></li>
 <li><p>Implementing callbacks to improve performance and avoid overfitting.</p></li>
+<li><p>Understanding how domain knowledge can improve the generalizability of neural networks.</p></li>
 </ol>
 <p>Today’s tutorial:</p>
 <ol class="arabic simple">
@@ -460,34 +449,6 @@ document.write(`
 <li><p>Ask your neighbor(s), the teacher, or the TA for help</p></li>
 <li><p>Debug your program, e.g. by following <a class="reference external" href="https://swcarpentry.github.io/python-novice-inflammation/11-debugging/index.html">this tutorial</a></p></li>
 <li><p>Use assertions, e.g. by following <a class="reference external" href="https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html">this tutorial</a></p></li>
-</ul>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="part-i-practice-on-simple-datasets">
-<h1><span class="section-number">14. </span>Part I: Practice on Simple Datasets<a class="headerlink" href="#part-i-practice-on-simple-datasets" title="Permalink to this headline">#</a></h1>
-<hr class="docutils" />
-<p>Go to notebook <a class="reference external" href="https://colab.research.google.com/github/tbeucler/2022_ML_EES/blob/main/Labs/S4_1_NNs_with_Keras.ipynb"><code class="docutils literal notranslate"><span class="pre">S4_1_NNs_with_Keras</span></code></a></p>
-</div>
-<hr class="docutils" />
-<div class="tex2jax_ignore mathjax_ignore section" id="part-ii-application-to-the-emulation-of-atmospheric-convection-for-climate-modeling">
-<h1><span class="section-number">15. </span>Part II: Application to the Emulation of Atmospheric Convection for Climate Modeling<a class="headerlink" href="#part-ii-application-to-the-emulation-of-atmospheric-convection-for-climate-modeling" title="Permalink to this headline">#</a></h1>
-<hr class="docutils" />
-<p>Following student feedback, we are only keeping one notebook for this week so that you have more time to work on your final projects. 👍</p>
-<!-- Go to notebook [`S4_2_ANNs_for_Climate`](https://colab.research.google.com/github/tbeucler/2022_ML_Earth_Env_Sci/blob/main/Lab_Notebooks/S5_2_ANNs_for_Climate.ipynb) -->
-</div>
-<hr class="docutils" />
-<div class="tex2jax_ignore mathjax_ignore section" id="you-re-flying-high">
-<h1><span class="section-number">16. </span>You’re flying high! ⛈🌧 😃 🌧⛈<a class="headerlink" href="#you-re-flying-high" title="Permalink to this headline">#</a></h1>
-<p>You’ve reached the end of week 5’s lab. If you’re done early, consider:</p>
-<ul class="simple">
-<li><p>Giving feedback on how to improve this notebook (typos, hints, exercises that may be improved/removed/added, etc.) by messaging the teacher and TA(s) on Moodle</p></li>
-<li><p>Working on your final project for this course.</p></li>
-</ul>
-<p><strong>Final Project</strong>
-The final project’s goal is to answer a well-defined scientific question by applying one of the ML algorithms introduced in class on an environmental dataset of your choice (e.g., related to your Masters thesis or your PhD research).</p>
-<ul class="simple">
-<li><p>Now that you found a large environmental dataset linked to a scientific question you are passionate about, which machine learning algorithm can you use to address it? Is it a classification, a regression, or a data exploration project?</p></li>
-<li><p>How could you format the dataset to facilitate its manipulation in Python?</p></li>
-<li><p>If you’re still hunting for a dataset of interest, consider browsing the <a class="reference external" href="http://mldata.pangeo.io/index.html">list of benchmark datasets</a> maintained by <a class="reference external" href="https://pangeo.io/">Pangeo</a> and <a class="reference external" href="https://www.kaggle.com/datasets">Kaggle</a>.</p></li>
 </ul>
 <div class="toctree-wrapper compound">
 </div>
@@ -538,7 +499,7 @@ The final project’s goal is to answer a well-defined scientific question by ap
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">16.1. </span>Notebook Setup</p>
+        <p class="prev-next-title"><span class="section-number">13.1. </span>Exercise 1: Artificial Neural Networks with Keras</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -551,24 +512,6 @@ The final project’s goal is to answer a well-defined scientific question by ap
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">13. <strong>Welcome to the fourth lab: Artificial Neural Networks and Surrogate Modeling</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i-practice-on-simple-datasets">14. Part I: Practice on Simple Datasets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii-application-to-the-emulation-of-atmospheric-convection-for-climate-modeling">15. Part II: Application to the Emulation of Atmospheric Convection for Climate Modeling</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#you-re-flying-high">16. You’re flying high! ⛈🌧 😃 🌧⛈</a></li>
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
