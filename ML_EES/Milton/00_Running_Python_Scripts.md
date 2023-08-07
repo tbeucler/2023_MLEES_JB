@@ -57,7 +57,7 @@ Try it out by yourself with the following notebook:
 ## Binder 📒
 Binder is a bit more complicated to use than Colab, but it is also more powerful. We won't go into the details of how to create a Binder environment, but we will go over how to use one.
 
-Let's start by opening the Binder environment for the EuroSciPy 2022 tutorial [Machine Learning for Science Reproducibility](https://mybinder.org/v2/gh/JesperDramsch/ml-for-science-reproducibility-tutorial/HEAD). You should see a screen like this:
+Let's start by opening the Binder environment for the EuroSciPy 2022 tutorial [Machine Learning for Science Reproducibility](https://mybinder.org/v2/gh/JesperDramsch/ml-for-science-reproducibility-tutorial/HEAD). You should see a screen like this:  
 <img src='Binder_screens\binder_loading.png' width=50%> <br>
 This screen indicates that Binder is building the environment for you.  
 _This can take a while, so please be patient._  
@@ -94,7 +94,7 @@ Notice the `(base)` at the beginning of the line - this indicates that the `base
 ```bash
 conda create -n test_env
 ```
-You should be asked to confirm the installation of the new environment by typing `y` and pressing `Enter`. Once the environment is created, you should see a screen like this:
+You should be asked to confirm the installation of the new environment by typing `y` and pressing `Enter`. Once the environment is created, you should see a screen like this:  
 <img src='Conda_screens\create_env.png' width=50%> <br>
 If you run the `conda env list` command, you should now see both the `base` and `test_env` environments listed. Let's go ahead and activate the `test_env` environment by running the following command:
 ```bash
@@ -143,7 +143,7 @@ Let's create a new environment called `test_env` by running the following comman
 ```bash
 conda create -n test_env
 ```
-You should be asked to confirm the installation of the new environment by typing `y` and pressing `Enter`. Once the environment is created, you should see a screen like this:
+You should be asked to confirm the installation of the new environment by typing `y` and pressing `Enter`. Once the environment is created, you should see a screen like this:  
 <img src='Conda_screens\linux_create_env.png' width=50%> <br>
 If you run the `conda env list` command, you should now see both the `base` and `test_env` environments listed. Let's go ahead and activate the `test_env` environment by running the following command:
 ```bash
@@ -253,7 +253,7 @@ Go ahead and install the Jupyter extension on your own 😃.
 Now that you have both of these installed, click on the `Explorer` icon on the left - it looks like two files stacked on top of each other. You should see a screen like this:  
 <img src='Conda_screens\vscode_explorer.png' width=50%> <br>
 
-Click on the `Open Folder` button, and navigate to the folder where you have your notebooks stored. Select the folder and click on `Open`. You should see a screen like this:
+Click on the `Open Folder` button, and navigate to the folder where you have your notebooks stored. Select the folder and click on `Open`. You should see a screen like this:  
 <img src='Conda_screens\vscode_folder.png' width=50%> <br>
 
 Let's go ahead and start a new notebook. Click on the `New File` button on the top left corner of the screen, and type in `test.ipynb`. You should see a screen like this:  
@@ -368,7 +368,7 @@ git clone git@github.com:JesperDramsch/ml-for-science-reproducibility-tutorial.g
 ```
 If this is the first time you're cloning a repository, you'll be asked to confirm that you want to connect to the host. Type `yes` and press `Enter` to confirm. You should see a screen like this:  
 <img src='Git\win_repo_clone.png' width=50%> <br>
-And if you navigate to the directory where you cloned the repository, you should see a folder with the name of the repository, as shown below:"
+And if you navigate to the directory where you cloned the repository, you should see a folder with the name of the repository, as shown below:  
 <img src='Git\win_after_cloning.png' width=50%> <br>
 
 You can now open the repository in your IDE of choice and start working on it! 😃
