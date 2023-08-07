@@ -25,11 +25,10 @@ Let's go over how to use each of these options.
 To use Colab, you need to have a Google account. If you don't have one, you can create one [here](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp). Once you have an account, you can access Colab [here](https://colab.research.google.com/). You should see a screen like this:  
 <img src='Colab_Screens/Opening_Colab.png' width=50%>
 
-From this page, you can open up a new notebook by clicking on 'New Notebook' or by clicking on 'File' and then 'New Notebook'. You should then see a screen like this:
+From this page, you can open up a new notebook by clicking on 'New Notebook' or by clicking on 'File' and then 'New Notebook'. You should then see a screen like this:  
 <img src='Colab_Screens/Colab_New_Notebook.png' width=50%>
 
-You can now write and execute Python code in this notebook. To execute a cell, you can either click on the 'play' button to the left of the cell, or you can press 'Shift+Enter' on your keyboard. Try it out by copying the following text into a cell and executing the code:
-
+You can now write and execute Python code in this notebook. To execute a cell, you can either click on the 'play' button to the left of the cell, or you can press 'Shift+Enter' on your keyboard. Try it out by copying the following text into a cell and executing the code:  
 ```python
 print('Here is the list of all the packages installed in this environment:')
 !pip list
@@ -37,8 +36,8 @@ print('Here is the list of all the packages installed in this environment:')
 
 This is nice, but what we're most interested in today is to be able to run tutorials hosted on GitHub. There are a couple of ways to do this,
 1. If the jupyter notebook hosted on GitHub and was uploaded via the Colab interface, you can simply click on the "Open in Colab" button at the top of the page.  
-<img src='Colab_Screens/open_in_colab.png' width=10%> <br>
-This will open the notebook in Colab, and you can then execute the code as you would normally. You can find an example of this [here](https://github.com/msgomez06/ML_pedagogical_materials/blob/main/Labs/S2_1_Classification.ipynb). This notebook is part of a series materials developed for a course on Machine Learning given at UNIL, and is hosted on GitHub.  
+><img src='Colab_Screens/open_in_colab.png' width=10%> <br>
+>This will open the notebook in Colab, and you can then execute the code as you would normally. You can find an example of this [here](https://github.com/msgomez06/ML_pedagogical_materials/blob/main/Labs/S2_1_Classification.ipynb). This notebook is part of a series materials developed for a course on Machine Learning given at UNIL, and is hosted on GitHub.  
 
 2. If the notebook is hosted on GitHub, but was not uploaded via the Colab interface, you can use the URL pattern in order to open it on Colab.  
 As an example, we'll use the notebooks developed by Jesper Dramsch for the EuroSciPy 2022 tutorial [Machine Learning for Science Reproducibility](https://github.com/JesperDramsch/ml-for-science-reproducibility-tutorial/tree/main). Though the materials have been prepared for opening with Colab and Binder (as evidenced by the _open on_ widgets on the main Readme.md), let's pretend they weren't and [view the first notebook on GitHub](https://github.com/JesperDramsch/ml-for-science-reproducibility-tutorial/blob/main/book/notebooks/0-basic-data-prep-and-model.ipynb). When viewing the hosted notebook in your browser, you should see that the URL is  
