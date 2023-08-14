@@ -50,6 +50,8 @@ parts:
     - file: ML/Week_1_Linear&Logistic_Regression.ipynb
       title: Linear Regression for Regression and Logistic Regression for Classification
       sections:
+        - file: Saranya/W1_2.ipynb
+          title: Classification and Regression
         - file: ML/S1_1_Classification.ipynb
           title: (Exercises) Classification
         - file: ML/S1_2_Training_Models.ipynb
@@ -70,6 +72,8 @@ parts:
     - file: ML/Week_3_Dimensionality_Reduction_Clustering.ipynb
       title: Unsupervised Learning for Clustering/Dimensionality Reduction and Environmental Complexity
       sections:
+        - file: Jingyan/Chapter4-UnsupervisedLearning.ipynb
+          title: Unsupervised Learning for Clustering and Dimensionality Reduction
         - file: ML/S3_1_Dimensionality.ipynb
           title: (Exercise) Dimensionality Reduction
         - file: ML/S3_2_Clustering.ipynb

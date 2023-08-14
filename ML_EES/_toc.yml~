@@ -4,6 +4,11 @@
 format: jb-book
 root: index
 parts:
+- caption: Introduction
+  numbered: false
+  chapters:
+    - file: Milton/00_Running_Python_Scripts.md
+      title: Running Python scripts
 - caption: (Part I) Basics of Machine Learning for Earth and Environmental Sciences
   numbered: true
   chapters: 
