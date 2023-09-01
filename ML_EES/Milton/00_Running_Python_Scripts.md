@@ -26,7 +26,7 @@ To use Colab, you need to have a Google account. If you don't have one, you can 
 <img src='https://github.com/tbeucler/2023_MLEES_JB/blob/5ed5b4cd553f414f01f4207ffb0523bfa1a93afc/ML_EES/Milton/Colab_Screens/Opening_Colab.png' width=50%>
 
 From this page, you can open up a new notebook by clicking on 'New Notebook' or by clicking on 'File' and then 'New Notebook'. You should then see a screen like this:  
-<img src='Colab_Screens/Colab_New_Notebook.png' width=50%>
+<img src=[colab_02] width=50%>
 
 You can now write and execute Python code in this notebook. To execute a cell, you can either click on the 'play' button to the left of the cell, or you can press 'Shift+Enter' on your keyboard. Try it out by copying the following text into a cell and executing the code:  
 ```python
@@ -415,3 +415,6 @@ X, y = make_classification(n_samples=100, n_features=5, n_informative=3, n_redun
 lda = LinearDiscriminantAnalysis()
 lda.fit(X, y)
 ```
+
+[colab_02]:[colab_ref]Colab_New_Notebook.png'
+[colab_ref]:'https://github.com/tbeucler/2023_MLEES_JB/blob/5ed5b4cd553f414f01f4207ffb0523bfa1a93afc/ML_EES/Milton/Colab_Screens/
