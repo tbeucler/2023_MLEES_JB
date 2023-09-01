@@ -23,7 +23,7 @@ Let's go over how to use each of these options.
 
 ## Google Colaboratory 🥼
 To use Colab, you need to have a Google account. If you don't have one, you can create one [here](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp). Once you have an account, you can access Colab [here](https://colab.research.google.com/). You should see a screen like this:  
-<img src='Colab_Screens/Opening_Colab.png' width=50%>
+<img src='https://github.com/tbeucler/2023_MLEES_JB/blob/5ed5b4cd553f414f01f4207ffb0523bfa1a93afc/ML_EES/Milton/Colab_Screens/Opening_Colab.png' width=50%>
 
 From this page, you can open up a new notebook by clicking on 'New Notebook' or by clicking on 'File' and then 'New Notebook'. You should then see a screen like this:  
 <img src='Colab_Screens/Colab_New_Notebook.png' width=50%>
