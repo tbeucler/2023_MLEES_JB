@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Machine Learning Algorithms for Classification Tasks &#8212; Machine Learning for Earth and Environmental Sciences</title>
+    <title>3.1. Simple Machine Learning Algorithms for Classification Tasks &#8212; Machine Learning for Earth and Environmental Sciences</title>
   
   
   
@@ -62,6 +62,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Frederick/S2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3.2. Exercise 1: Comparing Different Types of Support Vector Machines for Classification" href="../ML/S2_1_SVM.html" />
+    <link rel="prev" title="3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis" href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -179,7 +181,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">(Part II) Basics of Machine Learning for Earth and Environmental Sciences</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ML/Week_1_Linear%26Logistic_Regression.html">2. Linear Regression for Regression, Logistic Regression for Classification and Statistical Forecasting</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Saranya/W1_2.html">2.1. Classification and Regression</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ML/S1_1_Classification.html">2.2. Notebook Setup</a></li>
@@ -192,14 +194,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ML/S1_3_Statistical_Forecasting.html">2.9. (Exercises) Statistical Forecasting</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html">3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_1_SVM.html">3.1. <strong>Exercise 1: Comparing Different Types of Support Vector Machines for Classification</strong></a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html">3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.1. Simple Machine Learning Algorithms for Classification Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S2_1_SVM.html">3.2. <strong>Exercise 1: Comparing Different Types of Support Vector Machines for Classification</strong></a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_2_Decision_Trees.html">3.3. Exercise 2: Training and Fine-Tuning a Decision Tree for the Moons Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S2_2_Decision_Trees.html">3.4. Exercise 2: Training and Fine-Tuning a Decision Tree for the Moons Dataset</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_3_Ensemble_Learning_Random_Forests.html">3.5. Exercise 3: Comparing (Ensemble of) Classifiers on MNIST Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S2_3_Ensemble_Learning_Random_Forests.html">3.6. Exercise 3: Comparing (Ensemble of) Classifiers on MNIST Data</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_4_Wildfire_Risk_Italy.html">3.7. Exercise 4: Mapping Wildfire Susceptibility in the Liguria Region with Simple Machine Learning Classifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S2_4_Wildfire_Risk_Italy.html">3.8. Exercise 4: Mapping Wildfire Susceptibility in the Liguria Region with Simple Machine Learning Classifiers</a></li>
 
 </ul>
 </li>
@@ -420,7 +423,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Basic Machine Learning Algorithms for Classification Tasks</h1>
+    <h1>Simple Machine Learning Algorithms for Classification Tasks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -430,9 +433,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-vector-machines">Support Vector Machines</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-trees">Decision Trees</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forests-and-ensemble-modeling">Random Forests and Ensemble Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-vector-machines">3.1.1. Support Vector Machines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-trees">3.1.2. Decision Trees</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forests-and-ensemble-modeling">3.1.3. Random Forests and Ensemble Modeling</a></li>
 </ul>
             </nav>
         </div>
@@ -444,8 +447,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="basic-machine-learning-algorithms-for-classification-tasks">
-<h1>Basic Machine Learning Algorithms for Classification Tasks<a class="headerlink" href="#basic-machine-learning-algorithms-for-classification-tasks" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="simple-machine-learning-algorithms-for-classification-tasks">
+<h1><span class="section-number">3.1. </span>Simple Machine Learning Algorithms for Classification Tasks<a class="headerlink" href="#simple-machine-learning-algorithms-for-classification-tasks" title="Permalink to this headline">#</a></h1>
 <p>This week we will introduce simple ML models particularly useful for classification tasks. Classification tasks aim to automatically assign different labels to new data based on the multivariate characteristics of the training dataset. We will introduce three possible approaches for such tasks: Support Vector Machine (SVM), Random Forest (RF) and Ensemble Models.</p>
 <p>Your learning objectives for this week include:</p>
 <ol class="arabic simple">
@@ -457,7 +460,7 @@ document.write(`
 <li><p>Understand Feature Importance</p></li>
 </ol>
 <div class="section" id="support-vector-machines">
-<h2>Support Vector Machines<a class="headerlink" href="#support-vector-machines" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.1.1. </span>Support Vector Machines<a class="headerlink" href="#support-vector-machines" title="Permalink to this headline">#</a></h2>
 <p><strong>Key points</strong></p>
 <ul class="simple">
 <li><p>SVM aims to find the decision boundary that linearly separates two data classes in feature space. (<em>Hard margin classification</em>)</p></li>
@@ -484,7 +487,7 @@ We use scikit-learn to build different SVMs to classify flowers in the proproces
 </ol>
 </div>
 <div class="section" id="decision-trees">
-<h2>Decision Trees<a class="headerlink" href="#decision-trees" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.1.2. </span>Decision Trees<a class="headerlink" href="#decision-trees" title="Permalink to this headline">#</a></h2>
 <p>Decision trees are a type of simple ML algorithm suitable for both classification and regression tasks. Decision trees are highly intuitive and interpretable since they are essentially a set of multiple decision functions. This interpretability makes decision trees useful for simple ML tasks, compared to complex neural networks that we will introduce in the upcoming weeks.</p>
 <p><strong>Key points</strong></p>
 <ul class="simple">
@@ -511,7 +514,7 @@ How to find the best set of hyperparameters for a single decision tree for a dat
 </ol>
 </div>
 <div class="section" id="random-forests-and-ensemble-modeling">
-<h2>Random Forests and Ensemble Modeling<a class="headerlink" href="#random-forests-and-ensemble-modeling" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.1.3. </span>Random Forests and Ensemble Modeling<a class="headerlink" href="#random-forests-and-ensemble-modeling" title="Permalink to this headline">#</a></h2>
 <p>This section explores combining multiple ML models to improve the overall performance and generalizability of the ML predictions. Ensemble learning combines the predictions from a diverse set of models, which improves the robustness and trustworthiness of the ML predictions. This chapter focuses on Random Forest, an ensemble of decision trees.</p>
 <p><strong>Key points</strong></p>
 <ul class="simple">
@@ -561,6 +564,24 @@ Tonini, M., D’Andrea, M., Biondi, G., Degli Esposti, S., Trucchia, A., &amp; F
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../ML/S2_1_SVM.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3.2. </span><strong>Exercise 1: Comparing Different Types of Support Vector Machines for Classification</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -579,9 +600,9 @@ Tonini, M., D’Andrea, M., Biondi, G., Degli Esposti, S., Trucchia, A., &amp; F
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-vector-machines">Support Vector Machines</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-trees">Decision Trees</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forests-and-ensemble-modeling">Random Forests and Ensemble Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-vector-machines">3.1.1. Support Vector Machines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-trees">3.1.2. Decision Trees</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forests-and-ensemble-modeling">3.1.3. Random Forests and Ensemble Modeling</a></li>
 </ul>
   </nav></div>
 

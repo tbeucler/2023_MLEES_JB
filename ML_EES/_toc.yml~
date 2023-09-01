@@ -107,4 +107,3 @@ parts:
           title: (Exercise) Composing Music
         - file: DL/S6_2_LSTM.ipynb
           title: (Exercise) Hydrological Modeling
-- caption: (Part IV) Towards Robust Machine Learning
