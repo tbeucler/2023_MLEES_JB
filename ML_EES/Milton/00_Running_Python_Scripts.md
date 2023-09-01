@@ -416,5 +416,5 @@ lda = LinearDiscriminantAnalysis()
 lda.fit(X, y)
 ```
 
-[colab_02]:[colab_ref]Colab_New_Notebook.png'
-[colab_ref]:'https://github.com/tbeucler/2023_MLEES_JB/blob/5ed5b4cd553f414f01f4207ffb0523bfa1a93afc/ML_EES/Milton/Colab_Screens/
+[colab_02]:[colab_ref]Colab_New_Notebook.png
+[colab_ref]:https://github.com/tbeucler/2023_MLEES_JB/blob/5ed5b4cd553f414f01f4207ffb0523bfa1a93afc/ML_EES/Milton/Colab_Screens/
