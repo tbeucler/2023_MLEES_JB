@@ -9,11 +9,11 @@ parts:
   chapters:
     - file: Milton/00_Running_Python_Scripts.md
       title: Running Python scripts
-- caption: (Part I) Basics of Machine Learning for Earth and Environmental Sciences
+- caption: (Part I) Basics of Scientific Programming for Applied Machine Learning
   numbered: true
   chapters: 
     - file: IP/intro_python.ipynb
-      title: Basics of Scientific Programming for Applied Machine Learning
+      title: Introduction to Python for Earth and Environmental Sciences
       sections: 
         - file: IP/W1_S1_Tutorial.ipynb
           title: Variables, Control Flow, and File I/O
@@ -47,8 +47,11 @@ parts:
           title: Statistical Graphics with Seaborn
         - file: IP/W4_S2.ipynb
           title: (Exercise) Marathon Data Analysis
+- caption: (Part II) Basics of Machine Learning for Earth and Environmental Sciences
+  numbered: true
+  chapters:
     - file: ML/Week_1_Linear&Logistic_Regression.ipynb
-      title: Linear Regression for Regression and Logistic Regression for Classification
+      title: Linear Regression for Regression, Logistic Regression for Classification and Statistical Forecasting
       sections:
         - file: Saranya/W1_2.ipynb
           title: Classification and Regression
@@ -80,7 +83,7 @@ parts:
           title: (Exercise) Clustering
         - file: ML/S3_3_THOR.ipynb
           title: (Exercise) Ocean Regimes Identification
-- caption: (Part II) Deep Learning for the Geosciences
+- caption: (Part III) Deep Learning for the Geosciences
   numbered: True
   chapters:
     - file: DL/Week_4_Artificial_Neural_Networks.ipynb
@@ -104,4 +107,4 @@ parts:
           title: (Exercise) Composing Music
         - file: DL/S6_2_LSTM.ipynb
           title: (Exercise) Hydrological Modeling
-
+- caption: (Part IV) Towards Robust Machine Learning
