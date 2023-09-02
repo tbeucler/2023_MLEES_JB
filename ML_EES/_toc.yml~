@@ -64,6 +64,8 @@ parts:
     - file: ML/Week_2_Decision_Trees_Random_Forests_SVMs.ipynb
       title: Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis
       sections:
+        - file: Frederick/S2.ipynb
+          title: Simple Machine Learning Algorithms for Classification Tasks
         - file: ML/S2_1_SVM.ipynb
           title: (Exercises) Support Vector Machines
         - file: ML/S2_2_Decision_Trees.ipynb

@@ -62,7 +62,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Frederick/S2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.2. Exercise 1: Comparing Different Types of Support Vector Machines for Classification" href="../ML/S2_1_SVM.html" />
+    <link rel="next" title="3.2. Exercise 1: Comparing Different Types of Support Vector Machines for Classification" href="S2_1_SVM.html" />
     <link rel="prev" title="3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis" href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -196,13 +196,13 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html">3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">3.1. Simple Machine Learning Algorithms for Classification Tasks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_1_SVM.html">3.2. <strong>Exercise 1: Comparing Different Types of Support Vector Machines for Classification</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="S2_1_SVM.html">3.2. <strong>Exercise 1: Comparing Different Types of Support Vector Machines for Classification</strong></a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_2_Decision_Trees.html">3.4. Exercise 2: Training and Fine-Tuning a Decision Tree for the Moons Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="S2_2_Decision_Trees.html">3.4. Exercise 2: Training and Fine-Tuning a Decision Tree for the Moons Dataset</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_3_Ensemble_Learning_Random_Forests.html">3.6. Exercise 3: Comparing (Ensemble of) Classifiers on MNIST Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="S2_3_Ensemble_Learning_Random_Forests.html">3.6. Exercise 3: Comparing (Ensemble of) Classifiers on MNIST Data</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../ML/S2_4_Wildfire_Risk_Italy.html">3.8. Exercise 4: Mapping Wildfire Susceptibility in the Liguria Region with Simple Machine Learning Classifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="S2_4_Wildfire_Risk_Italy.html">3.8. Exercise 4: Mapping Wildfire Susceptibility in the Liguria Region with Simple Machine Learning Classifiers</a></li>
 
 </ul>
 </li>
@@ -461,6 +461,8 @@ document.write(`
 </ol>
 <div class="section" id="support-vector-machines">
 <h2><span class="section-number">3.1.1. </span>Support Vector Machines<a class="headerlink" href="#support-vector-machines" title="Permalink to this headline">#</a></h2>
+<p><img alt="SVM_cartoon.jpeg" src="../_images/SVM_cartoon.jpeg" /></p>
+<p>Photo credit: <strong>Machine Learning for Everyone</strong>, vas3k’s blog. (<a class="reference external" href="https://vas3k.com/blog/machine_learning/">link</a>)</p>
 <p><strong>Key points</strong></p>
 <ul class="simple">
 <li><p>SVM aims to find the decision boundary that linearly separates two data classes in feature space. (<em>Hard margin classification</em>)</p></li>
@@ -489,6 +491,8 @@ We use scikit-learn to build different SVMs to classify flowers in the proproces
 <div class="section" id="decision-trees">
 <h2><span class="section-number">3.1.2. </span>Decision Trees<a class="headerlink" href="#decision-trees" title="Permalink to this headline">#</a></h2>
 <p>Decision trees are a type of simple ML algorithm suitable for both classification and regression tasks. Decision trees are highly intuitive and interpretable since they are essentially a set of multiple decision functions. This interpretability makes decision trees useful for simple ML tasks, compared to complex neural networks that we will introduce in the upcoming weeks.</p>
+<p>Here is an example decision tree applied to an environmental science data. The diagram is taken from Figure 1 of Gagne et al. (2009).</p>
+<p><img alt="decision_tree_example.gif" src="../_images/decision_tree_example.gif" /></p>
 <p><strong>Key points</strong></p>
 <ul class="simple">
 <li><p>Decision trees comprise multiple nodes and branches. Different nodes encode decisions based on input features.</p></li>
@@ -526,7 +530,9 @@ How to find the best set of hyperparameters for a single decision tree for a dat
 <li><p>The practice of boosting provides additional improvements in model performance and generalisation. Boosting is to train different ensemble models sequentially, with the later models specifically tasked to correct the error in the earlier trained models. <em>Gradient-boosting trees</em> are a good example of boosting for decision trees algorithms.</p></li>
 </ul>
 <p><strong>Environmental Sciences Applications</strong></p>
-<p>Random Forests can be used in similar environmental science problems as decision trees. We provide a practical exercise of using RF for real environmental science problems, based on a recent peer-reviewed paper (Tonini et al. 2020). The problem at hand is to create a susceptibility map of wildfires in Liguria, Italy. We will provide you a dataset with various environmental data (vegetation, topography, land use etc.). With this dataset, you will try to train an ensemble classification model and create a wildlife probability map.</p>
+<p>Random Forests can be used in similar environmental science problems as decision trees. We provide a practical exercise of using RF for real environmental science problems, based on a recent peer-reviewed paper (Tonini et al. 2020). The problem at hand is to create a susceptibility map of wildfires in Liguria, Italy. We will provide you a dataset with various environmental data (vegetation, topography, land use etc.). With this dataset, you will try to train an ensemble classification model and create a wildfire susceptibility map.</p>
+<p>Here is the wildfire susceptibility map in Tonini et al. (2020) that you will try to recreate in the exercise.</p>
+<p><img alt="RF_map.jpg" src="../_images/RF_map.jpg" /></p>
 <p>Reference:
 Tonini, M., D’Andrea, M., Biondi, G., Degli Esposti, S., Trucchia, A., &amp; Fiorucci, P. (2020). A Machine Learning-Based Approach for Wildfire Susceptibility Mapping. The Case Study of the Liguria Region in Italy. Geosciences.</p>
 <p>(<a class="reference external" href="https://www.mdpi.com/2076-3263/10/3/105">Link to Paper</a>)</p>
@@ -574,7 +580,7 @@ Tonini, M., D’Andrea, M., Biondi, G., Degli Esposti, S., Trucchia, A., &amp; F
       </div>
     </a>
     <a class="right-next"
-       href="../ML/S2_1_SVM.html"
+       href="S2_1_SVM.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
