@@ -9,11 +9,11 @@ parts:
   chapters:
     - file: Milton/00_Running_Python_Scripts.md
       title: Running Python scripts
-- caption: (Part I) Basics of Machine Learning for Earth and Environmental Sciences
+- caption: (Part I) Basics of Scientific Programming for Applied Machine Learning
   numbered: true
   chapters: 
     - file: IP/intro_python.ipynb
-      title: Basics of Scientific Programming for Applied Machine Learning
+      title: Introduction to Python for Earth and Environmental Sciences
       sections: 
         - file: IP/W1_S1_Tutorial.ipynb
           title: Variables, Control Flow, and File I/O
@@ -38,18 +38,23 @@ parts:
         - file: IP/W3_S2_Tutorial.ipynb
           title: Geospatial Data with Geopandas
         - file: IP/W3_S2.ipynb
-          title: Hurricane Track Analysis
+          title: (Exercise) Hurricane Track Analysis
         - file: IP/W4_S1_Tutorial.ipynb
-          title: Regression/Classification/Clustering with Scikit-learn
+          title: Regression, Classification, and Clustering with Scikit-learn
         - file: IP/W4_S1.ipynb
           title: (Exercises) Multivariate linear regression and clustering
         - file: IP/W4_S2_Tutorial.ipynb
           title: Statistical Graphics with Seaborn
         - file: IP/W4_S2.ipynb
-          title: Marathon Data Analysis
+          title: (Exercise) Marathon Data Analysis
+- caption: (Part II) Basics of Machine Learning for Earth and Environmental Sciences
+  numbered: true
+  chapters:
     - file: ML/Week_1_Linear&Logistic_Regression.ipynb
-      title: Linear Regression for Regression and Logistic Regression for Classification
+      title: Linear Regression for Regression, Logistic Regression for Classification and Statistical Forecasting
       sections:
+        - file: Saranya/W1_2.ipynb
+          title: Classification and Regression
         - file: ML/S1_1_Classification.ipynb
           title: (Exercises) Classification
         - file: ML/S1_2_Training_Models.ipynb
@@ -59,6 +64,8 @@ parts:
     - file: ML/Week_2_Decision_Trees_Random_Forests_SVMs.ipynb
       title: Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis
       sections:
+        - file: Frederick/S2.ipynb
+          title: Simple Machine Learning Algorithms for Classification Tasks
         - file: ML/S2_1_SVM.ipynb
           title: (Exercises) Support Vector Machines
         - file: ML/S2_2_Decision_Trees.ipynb
@@ -70,13 +77,15 @@ parts:
     - file: ML/Week_3_Dimensionality_Reduction_Clustering.ipynb
       title: Unsupervised Learning for Clustering/Dimensionality Reduction and Environmental Complexity
       sections:
+        - file: Jingyan/Chapter4-UnsupervisedLearning.ipynb
+          title: Unsupervised Learning for Clustering and Dimensionality Reduction
         - file: ML/S3_1_Dimensionality.ipynb
           title: (Exercise) Dimensionality Reduction
         - file: ML/S3_2_Clustering.ipynb
           title: (Exercise) Clustering
         - file: ML/S3_3_THOR.ipynb
           title: (Exercise) Ocean Regimes Identification
-- caption: (Part II) Deep Learning for the Geosciences
+- caption: (Part III) Deep Learning for the Geosciences
   numbered: True
   chapters:
     - file: DL/Week_4_Artificial_Neural_Networks.ipynb
@@ -100,4 +109,3 @@ parts:
           title: (Exercise) Composing Music
         - file: DL/S6_2_LSTM.ipynb
           title: (Exercise) Hydrological Modeling
-
