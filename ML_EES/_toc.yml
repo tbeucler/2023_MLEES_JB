@@ -90,6 +90,8 @@ parts:
 - caption: (Part III) Deep Learning for the Geosciences
   numbered: True
   chapters:
+    - file: Saranya/W4_ANNetworks.ipynb
+      title: Introduction to Artificial Neural Networks
     - file: DL/Week_4_Artificial_Neural_Networks.ipynb
       title: Artificial Neural Networks and Surrogate Modeling
       sections:
