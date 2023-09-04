@@ -66,13 +66,13 @@ parts:
       sections:
         - file: Frederick/S2.ipynb
           title: Simple Machine Learning Algorithms for Classification Tasks
-        - file: ML/S2_1_SVM.ipynb
+        - file: Frederick/S2_1_SVM.ipynb
           title: (Exercises) Support Vector Machines
-        - file: ML/S2_2_Decision_Trees.ipynb
+        - file: Frederick/S2_2_Decision_Trees.ipynb
           title: (Exercises) Decision Trees and Random Forest
-        - file: ML/S2_3_Ensemble_Learning_Random_Forests.ipynb
+        - file: Frederick/S2_3_Ensemble_Learning_Random_Forests.ipynb
           title: Ensemble Modeling and Stacking
-        - file: ML/S2_4_Wildfire_Risk_Italy.ipynb
+        - file: Frederick/S2_4_Wildfire_Risk_Italy.ipynb
           title: (Exercises) Wildfire Susceptibility Mapping
     - file: ML/Week_3_Dimensionality_Reduction_Clustering.ipynb
       title: Unsupervised Learning for Clustering/Dimensionality Reduction and Environmental Complexity
