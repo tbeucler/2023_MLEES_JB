@@ -59,6 +59,8 @@ parts:
           title: (Exercises) Classification
         - file: ML/S1_2_Training_Models.ipynb
           title: (Exercises) Training Models
+        - file: Saranya/W1_2_Stat.ipynb
+          title: Statistical Forecasting in Environmental Sciences
         - file: ML/S1_3_Statistical_Forecasting.ipynb
           title: (Exercises) Statistical Forecasting
     - file: ML/Week_2_Decision_Trees_Random_Forests_SVMs.ipynb
@@ -88,6 +90,8 @@ parts:
 - caption: (Part III) Deep Learning for the Geosciences
   numbered: True
   chapters:
+    - file: Saranya/W4_ANNetworks.ipynb
+      title: Introduction to Artificial Neural Networks
     - file: DL/Week_4_Artificial_Neural_Networks.ipynb
       title: Artificial Neural Networks and Surrogate Modeling
       sections:
@@ -98,6 +102,8 @@ parts:
     - file: DL/Week_5_Convolutional_NN.ipynb
       title: Convolutional Neural Networks and Remote Sensing
       sections:
+        - file: Jingyan/Ch5 Convolutional Neural Networks & Remote Sensing.ipynb
+          title: Convolutional Neural Networks and Remote Sensing
         - file: DL/S5_1_CNNs.ipynb
           title: (Exercise) Deep Computer Vision
         - file: DL/S5_2_CNN_and_EuroSAT.ipynb

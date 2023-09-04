@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6.1. Convolutional Neural Networks &amp; Remote Sensing &#8212; Machine Learning for Earth and Environmental Sciences</title>
+    <title>6.1. Convolutional Neural Networks and Remote Sensing &#8212; Machine Learning for Earth and Environmental Sciences</title>
   
   
   
@@ -62,7 +62,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Jingyan/Ch5 Convolutional Neural Networks & Remote Sensing';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6.2. Deep Computer Vision Using Convolutional Neural Networks" href="../DL/S5_1_CNNs.html" />
+    <link rel="next" title="6.2. Deep Computer Vision" href="../DL/S5_1_CNNs.html" />
     <link rel="prev" title="6. Convolutional Neural Networks and Remote Sensing" href="../DL/Week_5_Convolutional_NN.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -184,14 +184,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ML/Week_1_Linear%26Logistic_Regression.html">2. Linear Regression for Regression, Logistic Regression for Classification and Statistical Forecasting</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Saranya/W1_2.html">2.1. Classification and Regression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ML/S1_1_Classification.html">2.2. Notebook Setup</a></li>
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../ML/S1_2_Training_Models.html">2.6. Notebook Setup</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../ML/S1_3_Statistical_Forecasting.html">2.9. (Exercises) Statistical Forecasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S1_1_Classification.html">2.2. (Exercises) Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S1_2_Training_Models.html">2.3. (Exercises) Training Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Saranya/W1_2_Stat.html">2.4. Statistical Forecasting in Environmental Sciences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S1_3_Statistical_Forecasting.html">2.5. (Exercises) Statistical Forecasting</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html">3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -224,8 +220,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../DL/Week_5_Convolutional_NN.html">6. Convolutional Neural Networks and Remote Sensing</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">6.1. Convolutional Neural Networks and Remote Sensing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../DL/S5_1_CNNs.html">6.2. (Exercise) Deep Computer Vision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../DL/S5_2_CNN_and_EuroSAT.html">6.3. The EuroSAT dataset</a></li>
-
+<li class="toctree-l2"><a class="reference internal" href="../DL/S5_2_CNN_and_EuroSAT.html">6.3. (Exercise) Land Cover Classification</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../DL/Week_6_Recurrent_NN.html">7. Recurrent Neural Networks and Hydrological Modeling</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -422,7 +417,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Convolutional Neural Networks & Remote Sensing</h1>
+    <h1>Convolutional Neural Networks and Remote Sensing</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -452,8 +447,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="convolutional-neural-networks-remote-sensing">
-<h1><span class="section-number">6.1. </span>Convolutional Neural Networks &amp; Remote Sensing<a class="headerlink" href="#convolutional-neural-networks-remote-sensing" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="convolutional-neural-networks-and-remote-sensing">
+<h1><span class="section-number">6.1. </span>Convolutional Neural Networks and Remote Sensing<a class="headerlink" href="#convolutional-neural-networks-and-remote-sensing" title="Permalink to this headline">#</a></h1>
 <div class="section" id="what-are-convolutional-neural-networks-cnns">
 <h2><span class="section-number">6.1.1. </span>What are Convolutional Neural Networks (CNNs)?<a class="headerlink" href="#what-are-convolutional-neural-networks-cnns" title="Permalink to this headline">#</a></h2>
 <p>CNNs are a type of artificial neural network inspired by the structure and function of the human visual system. They excel at tasks related to pattern recognition and image analysis. CNNs are particularly well-suited for handling grid-like data, making them ideal for processing images and spatial data.</p>
@@ -559,7 +554,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6.2. </span>Deep Computer Vision Using Convolutional Neural Networks</p>
+        <p class="prev-next-title"><span class="section-number">6.2. </span>Deep Computer Vision</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

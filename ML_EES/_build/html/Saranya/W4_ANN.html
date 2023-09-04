@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summary : WEEK 4- Chapter 10 - Introduction to Artificial Neural Networks; Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow. &#8212; Machine Learning for Earth and Environmental Sciences</title>
+    <title>Introduction to Artificial Neural Networks &#8212; Machine Learning for Earth and Environmental Sciences</title>
   
   
   
@@ -182,14 +182,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ML/Week_1_Linear%26Logistic_Regression.html">2. Linear Regression for Regression, Logistic Regression for Classification and Statistical Forecasting</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="W1_2.html">2.1. Classification and Regression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ML/S1_1_Classification.html">2.2. Notebook Setup</a></li>
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../ML/S1_2_Training_Models.html">2.6. Notebook Setup</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../ML/S1_3_Statistical_Forecasting.html">2.9. (Exercises) Statistical Forecasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S1_1_Classification.html">2.2. (Exercises) Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S1_2_Training_Models.html">2.3. (Exercises) Training Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1_2_Stat.html">2.4. Statistical Forecasting in Environmental Sciences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ML/S1_3_Statistical_Forecasting.html">2.5. (Exercises) Statistical Forecasting</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ML/Week_2_Decision_Trees_Random_Forests_SVMs.html">3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -220,11 +216,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../DL/Week_5_Convolutional_NN.html">6. Convolutional Neural Networks and Remote Sensing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../DL/S5_1_CNNs.html">6.1. Notebook Setup</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../DL/S5_2_CNN_and_EuroSAT.html">6.4. The EuroSAT dataset</a></li>
-
+<li class="toctree-l2"><a class="reference internal" href="../Jingyan/Ch5%20Convolutional%20Neural%20Networks%20%26%20Remote%20Sensing.html">6.1. Convolutional Neural Networks and Remote Sensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DL/S5_1_CNNs.html">6.2. (Exercise) Deep Computer Vision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DL/S5_2_CNN_and_EuroSAT.html">6.3. (Exercise) Land Cover Classification</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../DL/Week_6_Recurrent_NN.html">7. Recurrent Neural Networks and Hydrological Modeling</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -421,7 +415,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Summary : WEEK 4- Chapter 10 - Introduction to Artificial Neural Networks; Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.</h1>
+    <h1>Introduction to Artificial Neural Networks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -431,19 +425,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-artificial-neural-networks">Introduction to Artificial Neural Networks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-neural-networks">Understanding Neural Networks:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-neural-networks">Understanding Neural Networks:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perceptron">PERCEPTRON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-neural-network">CREATE A NEURAL NETWORK</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-neural-network-in-practice-involves-several-steps-from-data-preparation-to-model-evaluation-let-s-go-through-these-steps-using-an-example-related-to-environmental-science-predicting-air-quality-based-on-meteorological-data-we-ll-create-a-simple-feedforward-neural-network-for-this-task">Building a neural network in practice involves several steps, from data preparation to model evaluation. Let’s go through these steps using an example related to environmental science: predicting air quality based on meteorological data. We’ll create a simple feedforward neural network for this task.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-neural-networks-dnns">Deep Neural Networks (DNNs):</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convolutional-neural-networks-cnns-and-recurrent-neural-networks-rnns">Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs):</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-neural-network">CREATE A NEURAL NETWORK</a></li>
 </ul>
             </nav>
         </div>
@@ -455,16 +439,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="summary-week-4-chapter-10-introduction-to-artificial-neural-networks-hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow">
-<h1>Summary : WEEK 4- Chapter 10 - Introduction to Artificial Neural Networks; Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.<a class="headerlink" href="#summary-week-4-chapter-10-introduction-to-artificial-neural-networks-hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow" title="Permalink to this headline">#</a></h1>
-<div class="section" id="introduction-to-artificial-neural-networks">
-<h2>Introduction to Artificial Neural Networks<a class="headerlink" href="#introduction-to-artificial-neural-networks" title="Permalink to this headline">#</a></h2>
-<div class="section" id="summary">
-<h3>Summary:<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h3>
-<p>Chapter 10 of “Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow” by Aurélien Géron introduces the fundamentals of Artificial Neural Networks (ANNs). ANNs are a central component of deep learning, a subfield of machine learning inspired by the structure and function of the human brain. The chapter covers the basic concepts of ANNs, including neurons, layers, activation functions, and training algorithms. It also discusses the application of ANNs in solving complex problems.</p>
-</div>
-<div class="section" id="learning-objectives">
-<h3>Learning Objectives:<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">#</a></h3>
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-artificial-neural-networks">
+<h1>Introduction to Artificial Neural Networks<a class="headerlink" href="#introduction-to-artificial-neural-networks" title="Permalink to this headline">#</a></h1>
+<p><strong>Summary</strong>:
+Chapter 10 of “Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow” by Aurélien Géron introduces the fundamentals of Artificial Neural Networks (ANNs). ANNs are a central component of deep learning, a subfield of machine learning inspired by the structure and function of the human brain. The chapter covers the basic concepts of ANNs, including neurons, layers, activation functions, and training algorithms. It also discusses the application of ANNs in solving complex problems.</p>
+<p><strong>Learning Objectives:</strong></p>
 <ol class="arabic simple">
 <li><p>Define an artificial neural network</p></li>
 <li><p>Understand activation functions</p></li>
@@ -472,13 +451,16 @@ document.write(`
 <li><p>Know the main hyperparameters defining a neural network’s architecture</p></li>
 <li><p>Know the main hyperparameters controlling the training of a neural network</p></li>
 </ol>
-</div>
 <div class="section" id="understanding-neural-networks">
-<h3>Understanding Neural Networks:<a class="headerlink" href="#understanding-neural-networks" title="Permalink to this headline">#</a></h3>
-<p>Neurons: Neurons are the basic building blocks of ANNs. They receive inputs, perform computations, and produce outputs.
-Layers: ANNs consist of an input layer, one or more hidden layers, and an output layer.
-Activation Functions: Activation functions introduce non-linearity to neurons, enabling the network to model complex relationships.
+<h2>Understanding Neural Networks:<a class="headerlink" href="#understanding-neural-networks" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>Neurons: Neurons are the basic building blocks of ANNs. They receive inputs, perform computations, and produce outputs.
+Layers: ANNs consist of an input layer, one or more hidden layers, and an output layer.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Activation Functions: Activation functions introduce non-linearity to neurons, enabling the network to model complex relationships.
 Tip: Visualize neurons and layers in ANNs as interconnected nodes. Understand the role of activation functions in introducing non-linearity.</p>
+</div></blockquote>
 <blockquote>
 <div><p>Feed-forward Neural Networks (FNNs): FNNs pass information in one direction, from input to output. They are used for tasks like classification and regression.
 Learning Objectives: Learn how to build a simple FNN using Keras.
@@ -504,7 +486,6 @@ Example: Experimenting with different network architectures to optimize accuracy
 Learning Objectives: Discover techniques like dropout and early stopping to mitigate overfitting.
 Example: Implementing dropout layers to improve the generalization of an ANN for predicting species distribution.</p>
 </div></blockquote>
-</div>
 </div>
 <div class="section" id="perceptron">
 <h2>PERCEPTRON<a class="headerlink" href="#perceptron" title="Permalink to this headline">#</a></h2>
@@ -548,8 +529,7 @@ Imagine you’re working on a project to identify whether a particular bird spec
 </div>
 <div class="section" id="create-a-neural-network">
 <h2>CREATE A NEURAL NETWORK<a class="headerlink" href="#create-a-neural-network" title="Permalink to this headline">#</a></h2>
-<div class="section" id="building-a-neural-network-in-practice-involves-several-steps-from-data-preparation-to-model-evaluation-let-s-go-through-these-steps-using-an-example-related-to-environmental-science-predicting-air-quality-based-on-meteorological-data-we-ll-create-a-simple-feedforward-neural-network-for-this-task">
-<h3>Building a neural network in practice involves several steps, from data preparation to model evaluation. Let’s go through these steps using an example related to environmental science: predicting air quality based on meteorological data. We’ll create a simple feedforward neural network for this task.<a class="headerlink" href="#building-a-neural-network-in-practice-involves-several-steps-from-data-preparation-to-model-evaluation-let-s-go-through-these-steps-using-an-example-related-to-environmental-science-predicting-air-quality-based-on-meteorological-data-we-ll-create-a-simple-feedforward-neural-network-for-this-task" title="Permalink to this headline">#</a></h3>
+<p><strong>Building a neural network in practice involves several steps, from data preparation to model evaluation. Let’s go through these steps using an example related to environmental science: predicting air quality based on meteorological data. We’ll create a simple feedforward neural network for this task.</strong></p>
 <blockquote>
 <div><p>Step 1: Data Collection and Preprocessing</p>
 </div></blockquote>
@@ -632,20 +612,15 @@ Imagine you’re working on a project to identify whether a particular bird spec
 </div></blockquote>
 <p>Deploy the Model: Once satisfied with the model’s performance, deploy it in a production environment. It can be used to make real-time air quality predictions based on incoming meteorological data.
 In this example, we’ve built a simple neural network for air quality prediction. In practice, you can enhance the model by incorporating more complex architectures (e.g., convolutional neural networks for image-based environmental data) and larger datasets. Neural networks in environmental science can be applied to various tasks, such as predicting pollutants, forecasting weather patterns, or modeling climate phenomena.</p>
-</div>
-<div class="section" id="deep-neural-networks-dnns">
-<h3>Deep Neural Networks (DNNs):<a class="headerlink" href="#deep-neural-networks-dnns" title="Permalink to this headline">#</a></h3>
+<p><strong>Deep Neural Networks (DNNs):</strong></p>
 <p>DNNs are ANNs with multiple hidden layers. They excel at capturing intricate patterns.
 Learning Objectives: Explore the benefits and challenges of deep networks.
 Example: Using a DNN to analyze satellite imagery for deforestation detection.</p>
-</div>
-<div class="section" id="convolutional-neural-networks-cnns-and-recurrent-neural-networks-rnns">
-<h3>Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs):<a class="headerlink" href="#convolutional-neural-networks-cnns-and-recurrent-neural-networks-rnns" title="Permalink to this headline">#</a></h3>
+<p><strong>Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs):</strong></p>
 <p>CNNs are suited for image and spatial data, while RNNs handle sequential data.
 Learning Objectives: Understand when to use CNNs and RNNs in environmental applications.
 Example: Applying CNNs to identify land cover types from satellite images.</p>
 <p>By the end of this week, students should be able to create, train, and evaluate basic ANNs for environmental applications, recognize overfitting, and employ regularization techniques. They will also understand the potential of deep networks like CNNs and RNNs in analyzing complex environmental data.</p>
-</div>
 </div>
 </div>
 
@@ -698,19 +673,9 @@ Example: Applying CNNs to identify land cover types from satellite images.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-artificial-neural-networks">Introduction to Artificial Neural Networks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-neural-networks">Understanding Neural Networks:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-neural-networks">Understanding Neural Networks:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perceptron">PERCEPTRON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-neural-network">CREATE A NEURAL NETWORK</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-neural-network-in-practice-involves-several-steps-from-data-preparation-to-model-evaluation-let-s-go-through-these-steps-using-an-example-related-to-environmental-science-predicting-air-quality-based-on-meteorological-data-we-ll-create-a-simple-feedforward-neural-network-for-this-task">Building a neural network in practice involves several steps, from data preparation to model evaluation. Let’s go through these steps using an example related to environmental science: predicting air quality based on meteorological data. We’ll create a simple feedforward neural network for this task.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-neural-networks-dnns">Deep Neural Networks (DNNs):</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convolutional-neural-networks-cnns-and-recurrent-neural-networks-rnns">Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs):</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-neural-network">CREATE A NEURAL NETWORK</a></li>
 </ul>
   </nav></div>
 

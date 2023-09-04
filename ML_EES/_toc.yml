@@ -98,7 +98,7 @@ parts:
         - file: DL/S4_1_NNs_with_Keras.ipynb
           title: (Exercise) Artificial Neural Networks with Keras
         - file: DL/S4_2_Physically_informed_parameterization.ipynb
-          title: (Exercise) Physically-Informed Climate Modeling.ipynb
+          title: (Exercise) Physically-Informed Climate Modeling
     - file: DL/Week_5_Convolutional_NN.ipynb
       title: Convolutional Neural Networks and Remote Sensing
       sections:
