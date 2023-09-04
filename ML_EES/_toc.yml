@@ -59,6 +59,8 @@ parts:
           title: (Exercises) Classification
         - file: ML/S1_2_Training_Models.ipynb
           title: (Exercises) Training Models
+        - file: Saranya/W1_2_Stat.ipynb
+          title: Statistical Forecasting in Environmental Sciences
         - file: ML/S1_3_Statistical_Forecasting.ipynb
           title: (Exercises) Statistical Forecasting
     - file: ML/Week_2_Decision_Trees_Random_Forests_SVMs.ipynb
