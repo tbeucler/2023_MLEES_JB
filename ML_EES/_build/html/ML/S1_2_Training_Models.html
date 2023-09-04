@@ -193,15 +193,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Week_2_Decision_Trees_Random_Forests_SVMs.html">3. Decision Trees, Random Forests, Support Vector Machines and Environmental Risk Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Frederick/S2.html">3.1. Simple Machine Learning Algorithms for Classification Tasks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Frederick/S2_1_SVM.html">3.2. <strong>Exercise 1: Comparing Different Types of Support Vector Machines for Classification</strong></a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../Frederick/S2_2_Decision_Trees.html">3.4. Exercise 2: Training and Fine-Tuning a Decision Tree for the Moons Dataset</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../Frederick/S2_3_Ensemble_Learning_Random_Forests.html">3.6. Exercise 3: Comparing (Ensemble of) Classifiers on MNIST Data</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../Frederick/S2_4_Wildfire_Risk_Italy.html">3.8. Exercise 4: Mapping Wildfire Susceptibility in the Liguria Region with Simple Machine Learning Classifiers</a></li>
-
+<li class="toctree-l2"><a class="reference internal" href="../Frederick/Simple_Machine_Learning_Algorithms_for_Classification_Tasks.html">3.1. Simple Machine Learning Algorithms for Classification Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Frederick/%28Exercises%29_Support_Vector_Machines.html">3.2. (Exercises) Support Vector Machines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Frederick/%28Exercises%29_Decision_Trees_and_Random_Forest.html">3.3. (Exercises) Decision Trees and Random Forest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Frederick/%28Exercises%29_Ensemble_Modeling_and_Stacking.html">3.4. Ensemble Modeling and Stacking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Frederick/%28Exercises%29_Wildfire_Susceptibility_Mapping.html">3.5. (Exercises) Wildfire Susceptibility Mapping</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Week_3_Dimensionality_Reduction_Clustering.html">4. Unsupervised Learning for Clustering/Dimensionality Reduction and Environmental Complexity</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -216,7 +212,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../DL/Week_4_Artificial_Neural_Networks.html">5. Artificial Neural Networks and Surrogate Modeling</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../DL/S4_1_NNs_with_Keras.html">5.1. (Exercise) Artificial Neural Networks with Keras</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../DL/S4_2_Physically_informed_parameterization.html">5.2. (Exercise) Physically-Informed Climate Modeling.ipynb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DL/S4_2_Physically_informed_parameterization.html">5.2. (Exercise) Physically-Informed Climate Modeling</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../DL/Week_5_Convolutional_NN.html">6. Convolutional Neural Networks and Remote Sensing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -429,20 +425,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notebook-setup">2.3.1. Notebook Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q1-extract-the-bill-length-and-bill-depth-to-use-as-the-input-vector-x-and-store-the-label-i-e-the-target-data-in-y">2.3.1.1. Q1) Extract the bill length and bill depth to use as the input vector <span class="math notranslate nohighlight">\(x\)</span>, and store the label (i.e., the target data) in <span class="math notranslate nohighlight">\(y\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q2-convert-the-species-label-to-a-binary-classification-and-filter-the-target-data-to-match-the-input-data">2.3.1.2. <strong>Q2) Convert the species label to a binary classification, and filter the target data to match the input data.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q3-define-the-logistic-function">2.3.1.3. <strong>Q3) Define the logistic function</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q4-set-up-an-array-of-random-numbers-between-0-and-1-representing-the-theta-vector">2.3.1.4. <strong>Q4) Set up an array of random numbers between 0 and 1 representing the <span class="math notranslate nohighlight">\(\theta\)</span> vector.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q5-define-a-log-loss-function-that-takes-in-an-arbitrarily-large-set-of-prediction-and-truths">2.3.1.5. <strong>Q5) Define a log_loss function that takes in an arbitrarily large set of prediction and truths</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q6-prepare-the-x-with-bias-matrix">2.3.1.6. <strong>Q6) Prepare the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q7-write-a-function-called-predict-that-takes-in-the-parameter-vector-theta-and-the-x-with-bias-matrix-and-evaluates-the-logistic-function-for-each-of-the-samples">2.3.1.7. <strong>Q7) Write a function called <code class="docutils literal notranslate"><span class="pre">predict</span></code> that takes in the parameter vector <span class="math notranslate nohighlight">\(\theta\)</span> and the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix and evaluates the logistic function for each of the samples.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q8-now-that-you-have-a-predict-function-write-a-gradient-calc-function-that-calculates-the-gradient-for-the-logistic-function">2.3.1.8. <strong>Q8) Now that you have a <code class="docutils literal notranslate"><span class="pre">predict</span></code> function, write a <code class="docutils literal notranslate"><span class="pre">gradient_calc</span></code> function that calculates the gradient for the logistic function.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q9-write-the-logistic-regression-function">2.3.1.9. <strong>Q9) Write the <code class="docutils literal notranslate"><span class="pre">logistic_regression</span></code> function</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q10-train-your-logistic-regression-algorithm-we-recommend-you-use-500-iterations-eta-0-1">2.3.1.10. <strong>Q10) Train your logistic regression algorithm. We recommend you use 500 iterations, <span class="math notranslate nohighlight">\(\eta\)</span>=0.1</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">2.3.2. Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notebook-setup">2.3.1. Notebook Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q1-extract-the-bill-length-and-bill-depth-to-use-as-the-input-vector-x-and-store-the-label-i-e-the-target-data-in-y">2.3.2. Q1) Extract the bill length and bill depth to use as the input vector <span class="math notranslate nohighlight">\(x\)</span>, and store the label (i.e., the target data) in <span class="math notranslate nohighlight">\(y\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q2-convert-the-species-label-to-a-binary-classification-and-filter-the-target-data-to-match-the-input-data">2.3.3. <strong>Q2) Convert the species label to a binary classification, and filter the target data to match the input data.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q3-define-the-logistic-function">2.3.4. <strong>Q3) Define the logistic function</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q4-set-up-an-array-of-random-numbers-between-0-and-1-representing-the-theta-vector">2.3.5. <strong>Q4) Set up an array of random numbers between 0 and 1 representing the <span class="math notranslate nohighlight">\(\theta\)</span> vector.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q5-define-a-log-loss-function-that-takes-in-an-arbitrarily-large-set-of-prediction-and-truths">2.3.6. <strong>Q5) Define a log_loss function that takes in an arbitrarily large set of prediction and truths</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q6-prepare-the-x-with-bias-matrix">2.3.7. <strong>Q6) Prepare the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q7-write-a-function-called-predict-that-takes-in-the-parameter-vector-theta-and-the-x-with-bias-matrix-and-evaluates-the-logistic-function-for-each-of-the-samples">2.3.8. <strong>Q7) Write a function called <code class="docutils literal notranslate"><span class="pre">predict</span></code> that takes in the parameter vector <span class="math notranslate nohighlight">\(\theta\)</span> and the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix and evaluates the logistic function for each of the samples.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q8-now-that-you-have-a-predict-function-write-a-gradient-calc-function-that-calculates-the-gradient-for-the-logistic-function">2.3.9. <strong>Q8) Now that you have a <code class="docutils literal notranslate"><span class="pre">predict</span></code> function, write a <code class="docutils literal notranslate"><span class="pre">gradient_calc</span></code> function that calculates the gradient for the logistic function.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q9-write-the-logistic-regression-function">2.3.10. <strong>Q9) Write the <code class="docutils literal notranslate"><span class="pre">logistic_regression</span></code> function</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q10-train-your-logistic-regression-algorithm-we-recommend-you-use-500-iterations-eta-0-1">2.3.11. <strong>Q10) Train your logistic regression algorithm. We recommend you use 500 iterations, <span class="math notranslate nohighlight">\(\eta\)</span>=0.1</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">2.3.12. Challenges</a></li>
 </ul>
             </nav>
         </div>
@@ -596,8 +590,9 @@ In order: Adélie (Pygoscelis adeliae),  Chinstrap (Pygoscelis antarcticus), and
 </div>
 <p>We now have a dataframe with all the information that we need. Let’s go ahead and extract the bill length and depth to use as input data, storing it in <span class="math notranslate nohighlight">\(x\)</span>.
 Then we’ll store the labels (i.e., the <em>targets</em>) in <span class="math notranslate nohighlight">\(y\)</span>.</p>
+</div>
 <div class="section" id="q1-extract-the-bill-length-and-bill-depth-to-use-as-the-input-vector-x-and-store-the-label-i-e-the-target-data-in-y">
-<h3><span class="section-number">2.3.1.1. </span>Q1) Extract the bill length and bill depth to use as the input vector <span class="math notranslate nohighlight">\(x\)</span>, and store the label (i.e., the target data) in <span class="math notranslate nohighlight">\(y\)</span><a class="headerlink" href="#q1-extract-the-bill-length-and-bill-depth-to-use-as-the-input-vector-x-and-store-the-label-i-e-the-target-data-in-y" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.2. </span>Q1) Extract the bill length and bill depth to use as the input vector <span class="math notranslate nohighlight">\(x\)</span>, and store the label (i.e., the target data) in <span class="math notranslate nohighlight">\(y\)</span><a class="headerlink" href="#q1-extract-the-bill-length-and-bill-depth-to-use-as-the-input-vector-x-and-store-the-label-i-e-the-target-data-in-y" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Hints - Data Loading and Filtering</span>
@@ -657,7 +652,7 @@ Then we’ll store the labels (i.e., the <em>targets</em>) in <span class="math 
 <p>We have our input data, but we need a target to predict. We previously filtered the data to only include Adélie and Gentoo penguins, but we still have them as strings! Let’s convert them to a binary representation (i.e., 0 or 1). Make sure you have the same penguins as in your input!</p>
 </div>
 <div class="section" id="q2-convert-the-species-label-to-a-binary-classification-and-filter-the-target-data-to-match-the-input-data">
-<h3><span class="section-number">2.3.1.2. </span><strong>Q2) Convert the species label to a binary classification, and filter the target data to match the input data.</strong><a class="headerlink" href="#q2-convert-the-species-label-to-a-binary-classification-and-filter-the-target-data-to-match-the-input-data" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.3. </span><strong>Q2) Convert the species label to a binary classification, and filter the target data to match the input data.</strong><a class="headerlink" href="#q2-convert-the-species-label-to-a-binary-classification-and-filter-the-target-data-to-match-the-input-data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Hints - Boolean Representation &amp; Type Conversion</span>
@@ -733,7 +728,7 @@ The logistic regression algorithm will thus take an input <span class="math notr
 <p>Let’s define the logistic function for later use.</p>
 </div>
 <div class="section" id="q3-define-the-logistic-function">
-<h3><span class="section-number">2.3.1.3. </span><strong>Q3) Define the logistic function</strong><a class="headerlink" href="#q3-define-the-logistic-function" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.4. </span><strong>Q3) Define the logistic function</strong><a class="headerlink" href="#q3-define-the-logistic-function" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Hint - Exponential Function</span>
@@ -790,7 +785,7 @@ The logistic regression algorithm will thus take an input <span class="math notr
 <p>We now have a function which lets us map the value of the bill length and width to the class to which the observation belongs (i.e., whether the length and width correspond to Adélie or Gentoo penguins). However, there is a parameter vector <strong><span class="math notranslate nohighlight">\(\theta\)</span></strong> with a number of parameters that we do not have a value for: <br> <span class="math notranslate nohighlight">\(\theta = [ \beta_{\small{0}}, \beta_{\small{1}}\)</span>, <span class="math notranslate nohighlight">\(\beta_{\small{2}} ]\)</span></p>
 </div>
 <div class="section" id="q4-set-up-an-array-of-random-numbers-between-0-and-1-representing-the-theta-vector">
-<h3><span class="section-number">2.3.1.4. </span><strong>Q4) Set up an array of random numbers between 0 and 1 representing the <span class="math notranslate nohighlight">\(\theta\)</span> vector.</strong><a class="headerlink" href="#q4-set-up-an-array-of-random-numbers-between-0-and-1-representing-the-theta-vector" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.5. </span><strong>Q4) Set up an array of random numbers between 0 and 1 representing the <span class="math notranslate nohighlight">\(\theta\)</span> vector.</strong><a class="headerlink" href="#q4-set-up-an-array-of-random-numbers-between-0-and-1-representing-the-theta-vector" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Hints: Random Number Generation </span>
@@ -847,7 +842,7 @@ The logistic regression algorithm will thus take an input <span class="math notr
 <p>Now let’s code 💻</p>
 </div>
 <div class="section" id="q5-define-a-log-loss-function-that-takes-in-an-arbitrarily-large-set-of-prediction-and-truths">
-<h3><span class="section-number">2.3.1.5. </span><strong>Q5) Define a log_loss function that takes in an arbitrarily large set of prediction and truths</strong><a class="headerlink" href="#q5-define-a-log-loss-function-that-takes-in-an-arbitrarily-large-set-of-prediction-and-truths" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.6. </span><strong>Q5) Define a log_loss function that takes in an arbitrarily large set of prediction and truths</strong><a class="headerlink" href="#q5-define-a-log-loss-function-that-takes-in-an-arbitrarily-large-set-of-prediction-and-truths" title="Permalink to this headline">#</a></h2>
 <p><em>Hint 1: You need to encode the function <span class="math notranslate nohighlight">\(J\)</span> above, for which Numpy’s functions may be quite convenient (e.g., <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.log.html"><code class="docutils literal notranslate"><span class="pre">log</span></code></a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html"><code class="docutils literal notranslate"><span class="pre">mean</span></code></a>, etc.)</em></p>
 <p><em>Hint 2: Asserting the dimensions of the vector is a good way to check that your function is working correctly. <a class="reference external" href="https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html#assertions">Here’s a tutorial on how to use <code class="docutils literal notranslate"><span class="pre">assert</span></code></a>. For instance, to assert that two vectors <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> have the same dimension, you may use:</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="o">==</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span>
@@ -937,7 +932,7 @@ X_{\small{with\ bias}} = \begin{pmatrix}
 <br></p>
 </div>
 <div class="section" id="q6-prepare-the-x-with-bias-matrix">
-<h3><span class="section-number">2.3.1.6. </span><strong>Q6) Prepare the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix.</strong><a class="headerlink" href="#q6-prepare-the-x-with-bias-matrix" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.7. </span><strong>Q6) Prepare the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix.</strong><a class="headerlink" href="#q6-prepare-the-x-with-bias-matrix" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Hints: Making an an array filled with ones, hints on concatenation</span>
@@ -1003,7 +998,7 @@ X_{\small{with\ bias}} = \begin{pmatrix}
 [ 1.        <span class="math notranslate nohighlight">\(\quad\)</span> -0.94367375 <span class="math notranslate nohighlight">\(\quad\)</span> 0.13105561]]</p>
 </div>
 <div class="section" id="q7-write-a-function-called-predict-that-takes-in-the-parameter-vector-theta-and-the-x-with-bias-matrix-and-evaluates-the-logistic-function-for-each-of-the-samples">
-<h3><span class="section-number">2.3.1.7. </span><strong>Q7) Write a function called <code class="docutils literal notranslate"><span class="pre">predict</span></code> that takes in the parameter vector <span class="math notranslate nohighlight">\(\theta\)</span> and the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix and evaluates the logistic function for each of the samples.</strong><a class="headerlink" href="#q7-write-a-function-called-predict-that-takes-in-the-parameter-vector-theta-and-the-x-with-bias-matrix-and-evaluates-the-logistic-function-for-each-of-the-samples" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.8. </span><strong>Q7) Write a function called <code class="docutils literal notranslate"><span class="pre">predict</span></code> that takes in the parameter vector <span class="math notranslate nohighlight">\(\theta\)</span> and the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix and evaluates the logistic function for each of the samples.</strong><a class="headerlink" href="#q7-write-a-function-called-predict-that-takes-in-the-parameter-vector-theta-and-the-x-with-bias-matrix-and-evaluates-the-logistic-function-for-each-of-the-samples" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Hint: Pseudocode Snippet</span>
@@ -1052,7 +1047,7 @@ X_{\small{with\ bias}} = \begin{pmatrix}
 <p><code class="docutils literal notranslate"><span class="pre">[0.35434369</span> <span class="pre">0.46118934</span> <span class="pre">0.57172409</span> <span class="pre">0.67553632</span> <span class="pre">0.76454801]</span></code></p>
 </div>
 <div class="section" id="q8-now-that-you-have-a-predict-function-write-a-gradient-calc-function-that-calculates-the-gradient-for-the-logistic-function">
-<h3><span class="section-number">2.3.1.8. </span><strong>Q8) Now that you have a <code class="docutils literal notranslate"><span class="pre">predict</span></code> function, write a <code class="docutils literal notranslate"><span class="pre">gradient_calc</span></code> function that calculates the gradient for the logistic function.</strong><a class="headerlink" href="#q8-now-that-you-have-a-predict-function-write-a-gradient-calc-function-that-calculates-the-gradient-for-the-logistic-function" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.9. </span><strong>Q8) Now that you have a <code class="docutils literal notranslate"><span class="pre">predict</span></code> function, write a <code class="docutils literal notranslate"><span class="pre">gradient_calc</span></code> function that calculates the gradient for the logistic function.</strong><a class="headerlink" href="#q8-now-that-you-have-a-predict-function-write-a-gradient-calc-function-that-calculates-the-gradient-for-the-logistic-function" title="Permalink to this headline">#</a></h2>
 <p><em>Hint: You’ll have to feed <code class="docutils literal notranslate"><span class="pre">theta</span></code>, <code class="docutils literal notranslate"><span class="pre">X</span></code>, and <code class="docutils literal notranslate"><span class="pre">y</span></code> to the <code class="docutils literal notranslate"><span class="pre">gradient_calc</span></code> function.</em></p>
 <p><em>Hint: You can use <span class="xref myst">this equation</span> to calculate the gradient of the cost function.</em></p>
 <div class="cell docutils container">
@@ -1130,7 +1125,7 @@ X_{\small{with\ bias}} = \begin{pmatrix}
 </ul>
 </div>
 <div class="section" id="q9-write-the-logistic-regression-function">
-<h3><span class="section-number">2.3.1.9. </span><strong>Q9) Write the <code class="docutils literal notranslate"><span class="pre">logistic_regression</span></code> function</strong><a class="headerlink" href="#q9-write-the-logistic-regression-function" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.10. </span><strong>Q9) Write the <code class="docutils literal notranslate"><span class="pre">logistic_regression</span></code> function</strong><a class="headerlink" href="#q9-write-the-logistic-regression-function" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Hint: Pseudocode Snippet</span>
@@ -1256,7 +1251,7 @@ X_{\small{with\ bias}} = \begin{pmatrix}
 <p>Now we’re ready!</p>
 </div>
 <div class="section" id="q10-train-your-logistic-regression-algorithm-we-recommend-you-use-500-iterations-eta-0-1">
-<h3><span class="section-number">2.3.1.10. </span><strong>Q10) Train your logistic regression algorithm. We recommend you use 500 iterations, <span class="math notranslate nohighlight">\(\eta\)</span>=0.1</strong><a class="headerlink" href="#q10-train-your-logistic-regression-algorithm-we-recommend-you-use-500-iterations-eta-0-1" title="Permalink to this headline">#</a></h3>
+<h2><span class="section-number">2.3.11. </span><strong>Q10) Train your logistic regression algorithm. We recommend you use 500 iterations, <span class="math notranslate nohighlight">\(\eta\)</span>=0.1</strong><a class="headerlink" href="#q10-train-your-logistic-regression-algorithm-we-recommend-you-use-500-iterations-eta-0-1" title="Permalink to this headline">#</a></h2>
 <p><em>Hint: It’s time to use the <code class="docutils literal notranslate"><span class="pre">logistic_regression</span></code> function you defined in Q5.</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1327,9 +1322,8 @@ X_{\small{with\ bias}} = \begin{pmatrix}
 <code class="docutils literal notranslate"><span class="pre">Test</span> <span class="pre">Accuracy:100.0%</span> </code></p>
 <p>Once you’re done with the upcoming environmental science applications notebook, feel free to come back to take a look at the challenges 😀</p>
 </div>
-</div>
 <div class="section" id="challenges">
-<h2><span class="section-number">2.3.2. </span>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.12. </span>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><strong>C1)</strong> Add more features to try to improve our accuracies!</p></li>
 <li><p><strong>C2)</strong> Add early stopping to the training algorithm! (e.g., stop training when the accuracy is greater than a target accuracy)</p></li>
@@ -1404,20 +1398,18 @@ X_{\small{with\ bias}} = \begin{pmatrix}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notebook-setup">2.3.1. Notebook Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q1-extract-the-bill-length-and-bill-depth-to-use-as-the-input-vector-x-and-store-the-label-i-e-the-target-data-in-y">2.3.1.1. Q1) Extract the bill length and bill depth to use as the input vector <span class="math notranslate nohighlight">\(x\)</span>, and store the label (i.e., the target data) in <span class="math notranslate nohighlight">\(y\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q2-convert-the-species-label-to-a-binary-classification-and-filter-the-target-data-to-match-the-input-data">2.3.1.2. <strong>Q2) Convert the species label to a binary classification, and filter the target data to match the input data.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q3-define-the-logistic-function">2.3.1.3. <strong>Q3) Define the logistic function</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q4-set-up-an-array-of-random-numbers-between-0-and-1-representing-the-theta-vector">2.3.1.4. <strong>Q4) Set up an array of random numbers between 0 and 1 representing the <span class="math notranslate nohighlight">\(\theta\)</span> vector.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q5-define-a-log-loss-function-that-takes-in-an-arbitrarily-large-set-of-prediction-and-truths">2.3.1.5. <strong>Q5) Define a log_loss function that takes in an arbitrarily large set of prediction and truths</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q6-prepare-the-x-with-bias-matrix">2.3.1.6. <strong>Q6) Prepare the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q7-write-a-function-called-predict-that-takes-in-the-parameter-vector-theta-and-the-x-with-bias-matrix-and-evaluates-the-logistic-function-for-each-of-the-samples">2.3.1.7. <strong>Q7) Write a function called <code class="docutils literal notranslate"><span class="pre">predict</span></code> that takes in the parameter vector <span class="math notranslate nohighlight">\(\theta\)</span> and the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix and evaluates the logistic function for each of the samples.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q8-now-that-you-have-a-predict-function-write-a-gradient-calc-function-that-calculates-the-gradient-for-the-logistic-function">2.3.1.8. <strong>Q8) Now that you have a <code class="docutils literal notranslate"><span class="pre">predict</span></code> function, write a <code class="docutils literal notranslate"><span class="pre">gradient_calc</span></code> function that calculates the gradient for the logistic function.</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q9-write-the-logistic-regression-function">2.3.1.9. <strong>Q9) Write the <code class="docutils literal notranslate"><span class="pre">logistic_regression</span></code> function</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q10-train-your-logistic-regression-algorithm-we-recommend-you-use-500-iterations-eta-0-1">2.3.1.10. <strong>Q10) Train your logistic regression algorithm. We recommend you use 500 iterations, <span class="math notranslate nohighlight">\(\eta\)</span>=0.1</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">2.3.2. Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notebook-setup">2.3.1. Notebook Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q1-extract-the-bill-length-and-bill-depth-to-use-as-the-input-vector-x-and-store-the-label-i-e-the-target-data-in-y">2.3.2. Q1) Extract the bill length and bill depth to use as the input vector <span class="math notranslate nohighlight">\(x\)</span>, and store the label (i.e., the target data) in <span class="math notranslate nohighlight">\(y\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q2-convert-the-species-label-to-a-binary-classification-and-filter-the-target-data-to-match-the-input-data">2.3.3. <strong>Q2) Convert the species label to a binary classification, and filter the target data to match the input data.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q3-define-the-logistic-function">2.3.4. <strong>Q3) Define the logistic function</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q4-set-up-an-array-of-random-numbers-between-0-and-1-representing-the-theta-vector">2.3.5. <strong>Q4) Set up an array of random numbers between 0 and 1 representing the <span class="math notranslate nohighlight">\(\theta\)</span> vector.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q5-define-a-log-loss-function-that-takes-in-an-arbitrarily-large-set-of-prediction-and-truths">2.3.6. <strong>Q5) Define a log_loss function that takes in an arbitrarily large set of prediction and truths</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q6-prepare-the-x-with-bias-matrix">2.3.7. <strong>Q6) Prepare the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q7-write-a-function-called-predict-that-takes-in-the-parameter-vector-theta-and-the-x-with-bias-matrix-and-evaluates-the-logistic-function-for-each-of-the-samples">2.3.8. <strong>Q7) Write a function called <code class="docutils literal notranslate"><span class="pre">predict</span></code> that takes in the parameter vector <span class="math notranslate nohighlight">\(\theta\)</span> and the <code class="docutils literal notranslate"><span class="pre">X_with_bias</span></code> matrix and evaluates the logistic function for each of the samples.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q8-now-that-you-have-a-predict-function-write-a-gradient-calc-function-that-calculates-the-gradient-for-the-logistic-function">2.3.9. <strong>Q8) Now that you have a <code class="docutils literal notranslate"><span class="pre">predict</span></code> function, write a <code class="docutils literal notranslate"><span class="pre">gradient_calc</span></code> function that calculates the gradient for the logistic function.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q9-write-the-logistic-regression-function">2.3.10. <strong>Q9) Write the <code class="docutils literal notranslate"><span class="pre">logistic_regression</span></code> function</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q10-train-your-logistic-regression-algorithm-we-recommend-you-use-500-iterations-eta-0-1">2.3.11. <strong>Q10) Train your logistic regression algorithm. We recommend you use 500 iterations, <span class="math notranslate nohighlight">\(\eta\)</span>=0.1</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">2.3.12. Challenges</a></li>
 </ul>
   </nav></div>
 
