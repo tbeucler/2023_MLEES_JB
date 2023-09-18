@@ -111,6 +111,8 @@ parts:
     - file: DL/Week_6_Recurrent_NN.ipynb
       title: Recurrent Neural Networks and Hydrological Modeling
       sections:
+        - file: Frederick/Neural_Networks_for_Time_Series_Predictions.ipynb
+          title: Neural Networks for Time Series Predictions
         - file: DL/S6_1_Composing_Music_With_RNNs_CNNs.ipynb
           title: (Exercise) Composing Music
         - file: DL/S6_2_LSTM.ipynb
