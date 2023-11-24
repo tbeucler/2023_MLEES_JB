@@ -119,3 +119,8 @@ parts:
           title: (Exercise) Composing Music
         - file: DL/S6_2_LSTM.ipynb
           title: (Exercise) Hydrological Modeling
+    - file: DL/W8_XAIipynb
+      title: Explainable Artifical Intelligence (XAI)
+      sections:
+        - file: Frederick/S8_XAIsummary.ipynb
+          title: Machine learning model interpretability: Why do we need it?
