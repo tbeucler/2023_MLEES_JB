@@ -433,9 +433,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning-ul-v-s-supervised-learning-sl">4.1.2. Unsupervised Learning (UL) v.s Supervised Learning (SL)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimension-reduction">4.1.3. Dimension Reduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">4.1.4. Clustering</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-dimensionality-reduction">4.1.5. Exercise 1: Dimensionality Reduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-clustering">4.1.6. Exercise 2:  Clustering</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-application-to-dynamical-regime-identification-tracking-the-impact-of-global-heating-on-ocean-regimes-thor">4.1.7. Exercise 3: Application to Dynamical Regime Identification - Tracking the impact of global Heating on Ocean Regimes (THOR)</a></li>
 </ul>
             </nav>
         </div>
@@ -567,9 +564,39 @@ document.write(`
 <ul class="simple">
 <li><p>DBSCAN is a clustering algorithm that identifies clusters as continuous regions of high data density. It excels when clusters have varying densities and are separated by lower-density regions. DBSCAN categorizes data points into core instances (well within dense areas) and border instances (on cluster fringes) based on their proximity to other data points. Anomalies are data points that are neither core instances nor have nearby core instances. This method is robust to outliers, can handle clusters of different shapes, and is useful for a variety of applications.</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-1-dimensionality-reduction">
-<h2><span class="section-number">4.1.5. </span>Exercise 1: Dimensionality Reduction<a class="headerlink" href="#exercise-1-dimensionality-reduction" title="Permalink to this headline">#</a></h2>
+<p><strong>Examples</strong> of Dimensionality Reduction and Unsupervised Learning in <strong>Environmental Science</strong>🌄:</p>
+<blockquote>
+<div><p>Dimensionality reduction:</p>
+</div></blockquote>
+<blockquote>
+<div><blockquote>
+<div><p>PCA helps identify pollution sources in ambient air and soil, compare water quality in different watersheds, and quantify phenotypic variations amongst species based on multiple measurements.</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><p>Clustering:</p>
+</div></blockquote>
+<blockquote>
+<div><blockquote>
+<div><p>Clustering can be used to group different types of ecosystems together, based on their characteristics such as vegetation, wildlife, and climate. This information can be used to understand how different ecosystems respond to climate change and other environmental stressors.</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><blockquote>
+<div><p>Cluster analysis can be used to identify built environmental patterns.</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><blockquote>
+<div><p>GMMs could be applied to stratified lake water samples to identify distinct water quality profiles based on their chemical composition.</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><blockquote>
+<div><p><em>Tips and Tricks</em> 💡</p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Exercise 1</strong>: Dimensionality Reduction</p>
 <p>Does PCA always reduce model training time and increase model performance?</p>
 <ol class="arabic simple">
 <li><p>Load the MNIST dataset and split it into a training set and a test set;</p></li>
@@ -583,9 +610,7 @@ Evaluate the resulting model on the test set.</p></li>
 <li><p>Train a new Random Forest classifier on the reduced dataset. Was training much faster? Was the performance better?</p></li>
 <li><p>Train a new Logistic Regression classifier on the reduced dataset. Was training much faster? Was the performance better?</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-2-clustering">
-<h2><span class="section-number">4.1.6. </span>Exercise 2:  Clustering<a class="headerlink" href="#exercise-2-clustering" title="Permalink to this headline">#</a></h2>
+<p><strong>Exercise 2</strong>:  Clustering</p>
 <p>How to choose the number of clusters when using K-means?</p>
 <ol class="arabic simple">
 <li><p>Load the MNIST dataset;</p></li>
@@ -596,9 +621,7 @@ Evaluate the resulting model on the test set.</p></li>
 <li><p>Visualize silhouette score &amp; inertia against k;</p></li>
 <li><p>Visualize clusters.</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-3-application-to-dynamical-regime-identification-tracking-the-impact-of-global-heating-on-ocean-regimes-thor">
-<h2><span class="section-number">4.1.7. </span>Exercise 3: Application to Dynamical Regime Identification - Tracking the impact of global Heating on Ocean Regimes (THOR)<a class="headerlink" href="#exercise-3-application-to-dynamical-regime-identification-tracking-the-impact-of-global-heating-on-ocean-regimes-thor" title="Permalink to this headline">#</a></h2>
+<p><strong>Exercise 3</strong>: Application to Dynamical Regime Identification - Tracking the impact of global Heating on Ocean Regimes (THOR)</p>
 <blockquote>
 <div><p><strong>Reading</strong>: Transparent Machine learning (ML) method that explains the governing mechanisms of the North Atlantic Meridional Overturning Circulation (AMOC) called Tracking global Heating with Ocean Regimes (THOR).</p>
 </div></blockquote>
@@ -699,9 +722,6 @@ Figure credit: (Sonnewald et al., 2019)</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-learning-ul-v-s-supervised-learning-sl">4.1.2. Unsupervised Learning (UL) v.s Supervised Learning (SL)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimension-reduction">4.1.3. Dimension Reduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">4.1.4. Clustering</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-dimensionality-reduction">4.1.5. Exercise 1: Dimensionality Reduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-clustering">4.1.6. Exercise 2:  Clustering</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-application-to-dynamical-regime-identification-tracking-the-impact-of-global-heating-on-ocean-regimes-thor">4.1.7. Exercise 3: Application to Dynamical Regime Identification - Tracking the impact of global Heating on Ocean Regimes (THOR)</a></li>
 </ul>
   </nav></div>
 
